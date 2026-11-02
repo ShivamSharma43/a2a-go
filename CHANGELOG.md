@@ -1,5 +1,27 @@
 # Changelog
 
+## [2.8.0](https://github.com/a2aproject/a2a-go/compare/v2.7.0...v2.8.0) (2026-11-02)
+
+
+### Features
+
+* **a2agrpc:** add GRPCConnectionPool for gRPC client connection reuse (fixes [#109](https://github.com/a2aproject/a2a-go/issues/109)) ([#382](https://github.com/a2aproject/a2a-go/issues/382)) ([a2411f7](https://github.com/a2aproject/a2a-go/commit/a2411f7a6fc2753f364e37b999f128ac5ddec29d))
+* acp agent executor (part 1) ([#491](https://github.com/a2aproject/a2a-go/issues/491)) ([1d2031c](https://github.com/a2aproject/a2a-go/commit/1d2031cb9fcc78728da9006ed89e3fc33fa9ac0c))
+* acp agent executor (part 2) ([#492](https://github.com/a2aproject/a2a-go/issues/492)) ([75e34bd](https://github.com/a2aproject/a2a-go/commit/75e34bd09f3c38336345e77df972c649a73f5793))
+* acp agent executor (part 3) ([#493](https://github.com/a2aproject/a2a-go/issues/493)) ([c60c40e](https://github.com/a2aproject/a2a-go/commit/c60c40e583edd8da5e6242705c73d7d04b3b961d))
+* acp agent executor (part 4) ([#494](https://github.com/a2aproject/a2a-go/issues/494)) ([929512f](https://github.com/a2aproject/a2a-go/commit/929512f7172d687c08c6390376bf2d713e7b1fbf))
+* implement structured input extension ([#490](https://github.com/a2aproject/a2a-go/issues/490)) ([367f987](https://github.com/a2aproject/a2a-go/commit/367f987e7adb79c6c23ca7f6ede826683459ab30))
+
+
+### Bug Fixes
+
+* **a2aclient:** normalize service param keys set by the client and AuthInterceptor ([#479](https://github.com/a2aproject/a2a-go/issues/479)) ([96f4df0](https://github.com/a2aproject/a2a-go/commit/96f4df04259839356aa945017e5edfb209d73e1c))
+* **a2asrv:** reject HEAD before creating task subscriptions ([#481](https://github.com/a2aproject/a2a-go/issues/481)) ([e641e3c](https://github.com/a2aproject/a2a-go/commit/e641e3c29902c3228292aebe9c835b82501d1d12))
+* **client:** honor streaming interceptor error recovery ([#507](https://github.com/a2aproject/a2a-go/issues/507)) ([737b626](https://github.com/a2aproject/a2a-go/commit/737b626ae87515fa995347502f387fd352538d3d))
+* **client:** keep propagated tenants local to each call ([#495](https://github.com/a2aproject/a2a-go/issues/495)) ([0eaf017](https://github.com/a2aproject/a2a-go/commit/0eaf0170bab30e3ba0cbe2e4b6007ce7f7b780fc))
+* **pbconv:** preserve JSON data part values ([#503](https://github.com/a2aproject/a2a-go/issues/503)) ([7c040e0](https://github.com/a2aproject/a2a-go/commit/7c040e07379f73fb2588dc04540b94cb0a745806))
+* **sse:** ignore a leading UTF-8 byte order mark ([#511](https://github.com/a2aproject/a2a-go/issues/511)) ([248f628](https://github.com/a2aproject/a2a-go/commit/248f628fc653524143e14e17cdfe32985fb639d0))
+
 ## [2.7.0](https://github.com/a2aproject/a2a-go/compare/v2.6.0...v2.7.0) (2026-10-21)
 
 
